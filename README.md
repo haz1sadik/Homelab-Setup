@@ -19,7 +19,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 ---
 
-## Proxmox Installation
+## Proxmox Installation & Host Preparations
 1. **Install Proxmox VE:**
    - Obtain the Proxmox VE ISO from [Official Website](https://www.proxmox.com/en/downloads/proxmox-virtual-environment) and create a bootable USB drive.
    - Perform a standard installation in the host machine.
