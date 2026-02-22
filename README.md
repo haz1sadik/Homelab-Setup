@@ -19,3 +19,4 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 ---
 
+[Proxmox Installation & Host Preparation](Proxmox-Installation-Host-Prep.md)
