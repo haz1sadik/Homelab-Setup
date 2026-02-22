@@ -34,13 +34,18 @@ In this project, my main goal is to build and deploy my cybersecurity research l
    
      Take note of the network interface name of the USB Tethering device. In my case it is `enxaedde6bf213a`
    - Start the interface and obtain the ip address:
-   ```bash
-      ip link set enxaedde6bf213a up
-      dhclient enxaedde6bf213a
-   ```
+       ```bash
+          ip link set <interface> up
+          dhclient <interface>
+       ```
+   - Next we have to set the default gateway to send all outbounds traffic for networks outside of our LAN using IP address we obtain from last command:
+       ```bash
+           ip route del default
+           ip route set default via <IP> dev <interface>
+       ```
 
 4. **Enable Wi-Fi Client:**
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
-   ```bash
-      apt update && apt install wpasupplicant
-   ```
+       ```bash
+          apt update && apt install wpasupplicant
+       ```
