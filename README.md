@@ -50,4 +50,4 @@ In this project, my main goal is to build and deploy my cybersecurity research l
           apt update && apt install wpasupplicant
        ```
 
-[^1]: Thanks to [this guide](https://github.com/ThomasRives/Proxmox-over-wifi) made by [@ThomasRives](https://github.com/ThomasRives)
+[^1]: Thanks to [this guide](https://github.com/ThomasRives/Proxmox-over-wifi) made by [@ThomasRives](https://github.com/ThomasRives) on how to configure Wi-Fi connection in Proxmox
