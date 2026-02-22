@@ -41,6 +41,6 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 4. **Enable Wi-Fi Client:**
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
-```bash
-apt update && apt install wpasupplicant
-```
+   ```bash
+      apt update && apt install wpasupplicant
+   ```
