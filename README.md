@@ -44,7 +44,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
            ip route set default via <IP> dev <interface>
        ```
 
-4. **Enable Wi-Fi Client[^1]:**
+4. **Enable Wi-Fi Client [^1]:**
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
        ```bash
           apt update && apt install wpasupplicant
