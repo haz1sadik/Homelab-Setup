@@ -43,11 +43,14 @@ In this project, my main goal is to build and deploy my cybersecurity research l
            ip route del default
            ip route set default via <IP> dev <interface>
        ```
+   - Try to ping 8.8.8.8, if success means we got internet access.
 
 4. **Enable Wi-Fi Client [^1]:**
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
        ```bash
           apt update && apt install wpasupplicant
        ```
+   - Edit or create `/etc/wpa_supplicant/wpa_supplicant.conf`
+       
 
 [^1]: Thanks to [this guide](https://github.com/ThomasRives/Proxmox-over-wifi) made by [@ThomasRives](https://github.com/ThomasRives) on how to configure Wi-Fi connection in Proxmox
