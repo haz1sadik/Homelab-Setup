@@ -29,15 +29,17 @@ In this project, my main goal is to build and deploy my cybersecurity research l
    - Since my host machine is connected to my Mercusys router that do not have internet access, i need to use USB Tethering from my phone to get temporary internet access.
    - After turning on the USB Tethering, plug in the phone to the host machine.
    - Then run `ip a` to list out all network interfaces:
+   
    ![usb tethering interface](assets/usb-tethering-interface.png)
-take note of the network interface name of the USB Tethering device. In my case it is `enxaedde6bf213a`
+   
+     Take note of the network interface name of the USB Tethering device. In my case it is `enxaedde6bf213a`
    - Start the interface and obtain the ip address:
    ```bash
       ip link set enxaedde6bf213a up
       dhclient enxaedde6bf213a
    ```
 
-3. **Enable Wi-Fi Client:**
+4. **Enable Wi-Fi Client:**
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
 ```bash
 apt update && apt install wpasupplicant
