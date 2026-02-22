@@ -29,7 +29,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
    - Since my host machine is connected to my Mercusys router that do not have internet access, i need to use USB Tethering from my phone to get temporary internet access.
    - After turning on the USB Tethering, plug in the phone to the host machine.
    - Then run `ip a` to list out all network interfaces:
-   ![ip a output](assets/Screenshot 2026-02-22 145637.png)
+   ![usb tethering interface](assets/usb-tethering-interface.png)
 take note of the network interface name of the USB Tethering device. In my case it is `enxaedde6bf213a`
    - Start the interface and obtain the ip address:
    ```bash
