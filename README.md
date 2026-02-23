@@ -21,7 +21,8 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 ## Table of Contents
 
-1. [Proxmox Installation & Host Preparation](Proxmox-Installation-Host-Prep.md)
+1. [Proxmox Installation & Host Preparation](Proxmox-Installation-Host-Prep.md#Proxmox-Installation-&-Host-Preparations)
+   1.1 [Install Proxmox VE](Proxmox-Installation-Host-Prep.md#Install-Proxmox-VE)
 
 ---
 
