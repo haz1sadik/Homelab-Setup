@@ -27,7 +27,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
      
      1.2. [Getting Temporary Internet Access](Proxmox-Installation-Host-Prep.md#12-Getting-Temporary-Internet-Access)
 
-     1.3. [Enable Wi-Fi Client](Proxmox-Installation-Host-Prep.md#13-enable-wi-fi-client)
+     1.3. [Enable Wi-Fi Client](Proxmox-Installation-Host-Prep.md#13-enable-wifi-client)
 
 ---
 
