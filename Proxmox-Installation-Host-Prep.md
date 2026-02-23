@@ -24,7 +24,7 @@
        ```
    - Try to ping 8.8.8.8, if success means we got internet access.
 
-### 1.3 Enable Wi-Fi Client [^1]:
+### 1.3 Enable Wi-Fi Client: [^1]
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
        ```bash
           apt update && apt install wpasupplicant
