@@ -23,7 +23,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 1. [Network Architecture](sections/1-Network-Architechture.md)
 
-2. [Security Decisions]()
+2. [Security Decisions](sections/2-Security-Decisions.md)
 
 3. [Proxmox Installation & Wi-Fi Setup](sections/3-Proxmox-Installation-WiFi-Setup.md)
 
@@ -33,9 +33,9 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
      3.3. [Enable Wi-Fi Client](sections/3-Proxmox-Installation-WiFi-Setup.md#33-enable-wifi-client-1)
 
-4. [OPNsense Deployment & VLAN Setup]()
+4. [OPNsense Deployment & VLAN Setup](sections/4-OPNSense-Deployment-%26-VLAN-Setup.md)
 
-5. [Initial Firewall Setup]()
+5. [Initial Firewall Setup](sections/5-Initial-Firewall-Setup.md)
 
 ---
 
