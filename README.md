@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this project, my main goal is to build and deploy my cybersecurity research lab environment. This project architecture will use **Proxmox VE** as a Type-1 Hypervisor to manage all the virtual machines that will be used in the future project and **OPNSense** as my virtual router and firewall.
+In this project, my main goal is to build and deploy my cybersecurity research lab environment. This project architecture will use **Proxmox VE** as a Type-1 Hypervisor to manage all my virtual machines that will be used in the future project and **OPNSense** as my virtual router and firewall.
 
 **Hardware:**
 - **Host Machine:**
@@ -37,7 +37,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 5. [Initial Firewall Setup]()
 
-6. Challenges & Conclusion
+6. [Challenges & Conclusion]()
 ---
 
 ## 
