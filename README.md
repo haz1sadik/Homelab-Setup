@@ -23,7 +23,9 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 1. [Network Architecture]()
 
-2. [Proxmox Installation & Host Preparation](sections/Proxmox-Installation-WiFi-Setup.md)
+2. [Security Decisions]()
+
+3. [Proxmox Installation & Wi-Fi Setup](sections/Proxmox-Installation-WiFi-Setup.md)
 
      2.1. [Install Proxmox VE](sections/Proxmox-Installation-WiFi-Setup.md#11-Install-Proxmox-VE)
      
@@ -31,6 +33,11 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
      2.3. [Enable Wi-Fi Client](sections/Proxmox-Installation-WiFi-Setup.md#13-enable-wifi-client-1)
 
+4. [OPNsense Deployment & VLAN Setup]()
+
+5. [Initial Firewall Setup]()
+
+6. Challenges & Conclusion
 ---
 
 ## 
