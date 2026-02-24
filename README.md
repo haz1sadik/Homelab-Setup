@@ -23,45 +23,16 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 1. [Network Architecture]()
 
-2. [Proxmox Installation & Host Preparation](sections/Proxmox-Installation-Host-Prep.md#Proxmox-Installation-&-Host-Preparations)
+2. [Proxmox Installation & Host Preparation](sections/Proxmox-Installation-WiFi-Setup.md)
 
-     2.1. [Install Proxmox VE](sections/Proxmox-Installation-Host-Prep.md#11-Install-Proxmox-VE)
+     2.1. [Install Proxmox VE](sections/Proxmox-Installation-WiFi-Setup.md#11-Install-Proxmox-VE)
      
-     2.2. [Getting Temporary Internet Access](sections/Proxmox-Installation-Host-Prep.md#12-Getting-Temporary-Internet-Access)
+     2.2. [Getting Temporary Internet Access](sections/Proxmox-Installation-WiFi-Setup.md#12-Getting-Temporary-Internet-Access)
 
-     2.3. [Enable Wi-Fi Client](sections/Proxmox-Installation-Host-Prep.md#13-enable-wifi-client-1)
+     2.3. [Enable Wi-Fi Client](sections/Proxmox-Installation-WiFi-Setup.md#13-enable-wifi-client-1)
 
 ---
 
 ## 
 
-```mermaid
-graph TD
-    subgraph Home_Network [Home Network - 192.168.0.x]
-        A[Home Router]
-    end
 
-    subgraph Proxmox_Host [Proxmox Host - 192.168.1.2]
-        direction TB
-        B[WiFi Interface] -- NAT --> C[vmbr1: 172.16.0.1]
-        D[Physical Ethernet] --- E[vmbr0: VLAN Aware]
-    end
-
-    subgraph OPNsense_Firewall [OPNsense VM - 192.168.1.3]
-        C -- WAN --> F[vtnet1: 172.16.0.2]
-        E -- LAN Trunk --> G[vtnet0]
-        G --- H[VLAN 10: Attacker]
-        G --- I[VLAN 20: Victim]
-    end
-
-    subgraph Lab_Nodes [Virtual Machines]
-        H --- K[Kali Linux - 10.0.10.x]
-        I --- V[Windows Target - 10.0.20.x]
-    end
-
-    subgraph Physical_Access [Management Plane]
-        E --- M[Mercusys Switch]
-        M --- PC[Management PC - 192.168.1.x]
-    end
-
-    A -. WiFi .-> B
