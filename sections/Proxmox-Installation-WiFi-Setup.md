@@ -1,4 +1,4 @@
-## Proxmox Installation & Host Preparations
+## Proxmox Installation & Wi-Fi Setup
 ### 1.1 Install Proxmox VE:
    - Obtain the Proxmox VE ISO from [Official Website](https://www.proxmox.com/en/downloads/proxmox-virtual-environment) and create a bootable USB drive.
    - Perform a standard installation in the host machine.
