@@ -5,11 +5,13 @@
    - Assign the correct Ethernet port a static IP of `192.168.1.2/24`
 
 ### 3.2 Getting Temporary Internet Access:
+  > [!TIP]
+  > This step is optional and can be replaced with copying the `wpa supplicant` package and its dependencies to a USB drive and mount it in Proxmox to install it.
    - Since my host machine is connected to my Mercusys router that do not have internet access, i need to use USB Tethering from my phone to get temporary internet access.
    - After turning on the USB Tethering, plug in the phone to the host machine.
    - Then run `ip a` to list out all network interfaces:
    
-      ![usb tethering interface](assets/usb-tethering-interface.png)
+      ![usb tethering interface](../assets/usb-tethering-interface.png)
    
      Take note of the network interface name of the USB Tethering device. In my case it is `enxaedde6bf213a`
    - Start the interface and obtain the ip address:
@@ -66,8 +68,12 @@
        ```
    - After rebooting, try running `wpa_cli status` command to see if Wi-Fi connection is completed and we got an IP address.
 
-      ![wifi connection completed](assets/wifi-connection-completed.png)
+      ![wifi connection completed](../assets/wifi-connection-completed.png)
 
    - Try to ping `8.8.8.8` to test for internet connection.
+
+   > [!IMPORTANT]
+   > If unable to ping 8.8.8.8, run `ip a` to check whether the Wi-Fi interface is up and have an IP Address.
+   > Run `dhclient [interface]` if no IP Address was assigned
 
 [^1]: Thanks to [this guide](https://github.com/ThomasRives/Proxmox-over-wifi) made by [@ThomasRives](https://github.com/ThomasRives) on how to configure Wi-Fi connection in Proxmox
