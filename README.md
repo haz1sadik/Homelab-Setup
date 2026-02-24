@@ -21,25 +21,24 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 ## Table of Contents
 
-1. [Network Architecture](sections/Network-Architechture.md)
+1. [Network Architecture](sections/1-Network-Architechture.md)
 
 2. [Security Decisions]()
 
-3. [Proxmox Installation & Wi-Fi Setup](sections/Proxmox-Installation-WiFi-Setup.md)
+3. [Proxmox Installation & Wi-Fi Setup](sections/3-Proxmox-Installation-WiFi-Setup.md)
 
-     2.1. [Install Proxmox VE](sections/Proxmox-Installation-WiFi-Setup.md#11-Install-Proxmox-VE)
+     2.1. [Install Proxmox VE](sections/3-Proxmox-Installation-WiFi-Setup.md#11-Install-Proxmox-VE)
      
-     2.2. [Getting Temporary Internet Access](sections/Proxmox-Installation-WiFi-Setup.md#12-Getting-Temporary-Internet-Access)
+     2.2. [Getting Temporary Internet Access](sections/3-Proxmox-Installation-WiFi-Setup.md#12-Getting-Temporary-Internet-Access)
 
-     2.3. [Enable Wi-Fi Client](sections/Proxmox-Installation-WiFi-Setup.md#13-enable-wifi-client-1)
+     2.3. [Enable Wi-Fi Client](sections/3-Proxmox-Installation-WiFi-Setup.md#13-enable-wifi-client-1)
 
 4. [OPNsense Deployment & VLAN Setup]()
 
 5. [Initial Firewall Setup]()
 
-6. [Challenges & Conclusion]()
 ---
 
-## 
+## Challenges & Conclusion
 
 
