@@ -1,10 +1,10 @@
-## Proxmox Installation & Wi-Fi Setup
-### 1.1 Install Proxmox VE:
+## 3. Proxmox Installation & Wi-Fi Setup
+### 3.1 Install Proxmox VE:
    - Obtain the Proxmox VE ISO from [Official Website](https://www.proxmox.com/en/downloads/proxmox-virtual-environment) and create a bootable USB drive.
    - Perform a standard installation in the host machine.
    - Assign the correct Ethernet port a static IP of `192.168.1.2/24`
 
-### 1.2 Getting Temporary Internet Access:
+### 3.2 Getting Temporary Internet Access:
    - Since my host machine is connected to my Mercusys router that do not have internet access, i need to use USB Tethering from my phone to get temporary internet access.
    - After turning on the USB Tethering, plug in the phone to the host machine.
    - Then run `ip a` to list out all network interfaces:
@@ -24,7 +24,7 @@
        ```
    - Try to ping 8.8.8.8, if success means we got internet access.
 
-### 1.3 Enable WiFi Client: [^1]
+### 3.3 Enable WiFi Client: [^1]
    - Since Debian do not have out-of-box support for Wi-Fi, we need to install the additional driver and tools:
        ```bash
           apt update && apt install wpasupplicant
