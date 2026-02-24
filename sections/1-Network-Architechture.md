@@ -77,6 +77,9 @@
   </tbody>
 </table>
 
+> [!NOTE]
+> All components in the infrastructure and target machines are assigned with Static IP address to ensure persistence in documentation and ease of access. Only temporary sandbox VMs use DHCP within their VLAN handled by KEA DHCP in OPNSense
+
 ### 1.2 Network Topology
 
 ```mermaid
