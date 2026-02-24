@@ -1,3 +1,78 @@
+## 1. Network Architecture
+
+### 1.1 Network Addressing Schema
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Interface</th>
+      <th>IP Address</th>
+      <th>Network</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Home Router</strong></td>
+      <td>WAN</td>
+      <td><code>192.168.0.1</code></td>
+      <td>Home Net</td>
+      <td>Internet Gateway</td>
+    </tr>
+    <tr>
+      <td><strong>Mercusys Router</strong></td>
+      <td><code>Physical</code></td>
+      <td><code>192.168.1.1</code></td>
+      <td>Management</td>
+      <td>Management Access</td>
+    </tr>
+    <tr>
+      <td><strong>Proxmox Host</strong></td>
+      <td><code>vmbr0</code></td>
+      <td><code>192.168.1.2</code></td>
+      <td>Management</td>
+      <td>Hypervisor Management</td>
+    </tr>
+    <tr>
+      <td><strong>Mac Mini (MGMT)</strong></td>
+      <td>Physical</td>
+      <td><code>192.168.1.4</code></td>
+      <td>Management</td>
+      <td>Secure Access to Proxmox / OPNSense</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>OPNSense</strong></td>
+      <td><code>vmnet1</code>(WAN)</td>
+      <td><code>172.16.0.2</code></td>
+      <td>Transit Net</td>
+      <td>Upstream to Proxmox NAT</td>
+    </tr>
+    <tr>
+      <td>R<code>vmnet0</code>(LAN)</td>
+      <td><code>10.0.x.1</code></td>
+      <td>Trunk</td>
+      <td>Lab VLANs Gateway</td>
+    </tr>
+    <tr>
+      <td><strong>Offensive VMs</strong></td>
+      <td><code>Ethernet</code></td>
+      <td><code>10.0.10.x</code></td>
+      <td>VLAN 10</td>
+      <td>Attacker Node</td>
+    </tr>
+    <tr>
+      <td><strong>Defensive VMs</strong></td>
+      <td><code>Ethernet</code></td>
+      <td><code>10.0.20.x</code></td>
+      <td>VLAN 20</td>
+      <td>Research Node</td>
+    </tr>
+  </tbody>
+</table>
+
+### 1.2 Network Topology
+
 ```mermaid
 graph TD
     subgraph Home_Network [Home Network - 192.168.0.x]
