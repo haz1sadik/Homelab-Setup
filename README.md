@@ -27,11 +27,11 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 3. [Proxmox Installation & Wi-Fi Setup](sections/3-Proxmox-Installation-WiFi-Setup.md)
 
-     2.1. [Install Proxmox VE](sections/3-Proxmox-Installation-WiFi-Setup.md#31-Install-Proxmox-VE)
+     3.1. [Install Proxmox VE](sections/3-Proxmox-Installation-WiFi-Setup.md#31-Install-Proxmox-VE)
      
-     2.2. [Getting Temporary Internet Access](sections/3-Proxmox-Installation-WiFi-Setup.md#32-Getting-Temporary-Internet-Access)
+     3.2. [Getting Temporary Internet Access](sections/3-Proxmox-Installation-WiFi-Setup.md#32-Getting-Temporary-Internet-Access)
 
-     2.3. [Enable Wi-Fi Client](sections/3-Proxmox-Installation-WiFi-Setup.md#33-enable-wifi-client-1)
+     3.3. [Enable Wi-Fi Client](sections/3-Proxmox-Installation-WiFi-Setup.md#33-enable-wifi-client-1)
 
 4. [OPNsense Deployment & VLAN Setup]()
 
