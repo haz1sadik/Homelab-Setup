@@ -24,7 +24,7 @@ Next we will configure the initial firewall rules for our VLANs
         - Destination: `Any`
     
 ### 5.3 Defensive Rules in VLAN 20
-   ![VLAN 10 initial rules](../assets/VLAN10-initial-rules.png) 
+   ![VLAN 20 initial rules](../assets/VLAN20-initial-rules.png) 
    
    - **Block:** (Sandboxing for safer practice)
         - Source: `VLAN 20 net`
