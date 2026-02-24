@@ -23,7 +23,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 1. [Network Architecture](sections/1-Network-Architechture.md)
 
-2. [Security Decisions](sections/2-Security-Decisions.md)
+2. [Technical Security Decisions](sections/2-Technical-Security-Decisions.md)
 
 3. [Proxmox Installation & Wi-Fi Setup](sections/3-Proxmox-Installation-WiFi-Setup.md)
 
