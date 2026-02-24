@@ -35,21 +35,20 @@
       <td>Hypervisor Management</td>
     </tr>
     <tr>
-      <td><strong>Mac Mini (MGMT)</strong></td>
-      <td>Physical</td>
-      <td><code>192.168.1.4</code></td>
+      <td rowspan="3"><strong>OPNSense</strong></td>
+      <td><code>vmbr0</code></td>
+      <td><code>192.168.1.3</code></td>
       <td>Management</td>
-      <td>Secure Access to Proxmox / OPNSense</td>
+      <td>Access to OPNSense Web Console</td>
     </tr>
     <tr>
-      <td rowspan="2"><strong>OPNSense</strong></td>
       <td><code>vmnet1</code>(WAN)</td>
       <td><code>172.16.0.2</code></td>
       <td>Transit Net</td>
       <td>Upstream to Proxmox NAT</td>
     </tr>
     <tr>
-      <td>R<code>vmnet0</code>(LAN)</td>
+      <td><code>vmnet0</code>(LAN)</td>
       <td><code>10.0.x.1</code></td>
       <td>Trunk</td>
       <td>Lab VLANs Gateway</td>
@@ -67,6 +66,13 @@
       <td><code>10.0.20.x</code></td>
       <td>VLAN 20</td>
       <td>Research Node</td>
+    </tr>
+    <tr>
+      <td><strong>Management PC</strong></td>
+      <td>Physical</td>
+      <td><code>192.168.1.4</code></td>
+      <td>Management</td>
+      <td>Secure Access to Proxmox / OPNSense</td>
     </tr>
   </tbody>
 </table>
