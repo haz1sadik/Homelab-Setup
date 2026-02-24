@@ -21,13 +21,15 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 ## Table of Contents
 
-1. [Proxmox Installation & Host Preparation](Proxmox-Installation-Host-Prep.md#Proxmox-Installation-&-Host-Preparations)
+1. [Network Architecture]()
 
-     1.1. [Install Proxmox VE](Proxmox-Installation-Host-Prep.md#11-Install-Proxmox-VE)
+2. [Proxmox Installation & Host Preparation](sections/Proxmox-Installation-Host-Prep.md#Proxmox-Installation-&-Host-Preparations)
+
+     2.1. [Install Proxmox VE](sections/Proxmox-Installation-Host-Prep.md#11-Install-Proxmox-VE)
      
-     1.2. [Getting Temporary Internet Access](Proxmox-Installation-Host-Prep.md#12-Getting-Temporary-Internet-Access)
+     2.2. [Getting Temporary Internet Access](sections/Proxmox-Installation-Host-Prep.md#12-Getting-Temporary-Internet-Access)
 
-     1.3. [Enable Wi-Fi Client](Proxmox-Installation-Host-Prep.md#13-enable-wifi-client-1)
+     2.3. [Enable Wi-Fi Client](sections/Proxmox-Installation-Host-Prep.md#13-enable-wifi-client-1)
 
 ---
 
