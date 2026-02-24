@@ -21,7 +21,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
 ## Table of Contents
 
-1. [Network Architecture]()
+1. [Network Architecture](sections/Network-Architechture.md)
 
 2. [Security Decisions]()
 
