@@ -14,7 +14,7 @@
 
 </br>
 
-### 2. 3 Network Sandboxing
+### 2.3 Network Sandboxing
 **Decision:** 192.168.1.x subnet is dedicated only for Management Plane (Proxmox & OPNSense Web Console) separate from the Data Plane which is the lab traffic.
 
 **Reason:** Even if any of the Defensive VM gets infected with any malware or attack performed by Offensive VM, it cannot scan the network because they are on a different subnet. Thus, protecting my Proxmox Host and my Home network.
