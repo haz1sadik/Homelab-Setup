@@ -36,6 +36,9 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 4. [OPNsense Deployment & VLAN Setup](sections/4-OPNSense-Deployment-%26-VLAN-Setup.md)
 
 5. [Initial Firewall Setup](sections/5-Initial-Firewall-Setup.md)
+     5.1 [Alias Definition](sections/5-Initial-Firewall-Setup.md#51-alias-definition)
+     5.2 [Offensive Rules in VLAN 10](sections/5-Initial-Firewall-Setup.md#52-offensive-rules-in-vlan-10)
+     5.3 [Defensive Rules in VLAN 20](sections/5-Initial-Firewall-Setup.md#53-defensive-rules-in-vlan-20)
 
 ---
 
