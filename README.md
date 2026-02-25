@@ -42,8 +42,10 @@ In this project, my main goal is to build and deploy my cybersecurity research l
      4.3 [OPNsense Installation & Initial Setup](sections/4-OPNSense-Deployment.md#43-opnsense-installation--initial-setup)
 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.3.1 [Solving IP conflict with Mercusys IP](sections/4-OPNSense-Deployment.md#431-solving-ip-conflict-with-mercusys-ip)
+   
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.3.2 [Configuring WAN for internet access](sections/4-OPNSense-Deployment.md#432-configuring-wan-for-internet-access)
 
+5. [VLANs Setup](sections/5-VLANs-Setup.md)
 6. [Initial Firewall Setup](sections/6-Initial-Firewall-Setup.md)
    
      6.1 [Alias Definition](sections/5-Initial-Firewall-Setup.md#61-alias-definition)
