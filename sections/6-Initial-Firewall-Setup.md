@@ -8,6 +8,7 @@
    - To make our life easier and more organized, we can create an alias for our internal home networks containing all of our internal IP address that we dont want the VMs to access
    - To do so we can login to OPNsense Web GUI and go to **Firewall > Aliases**
    - Then we can add a new alias containing `192.168.0.0/16` (Our home network), `172.16.0.0/12` (Our WAN NAT), and `10.0.0.0/8`:
+     
        ![opnsense firewall alias](../assets/OPNsense-firewall-alias.png)
 
 Next we will configure the initial firewall rules for our VLANs
