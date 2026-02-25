@@ -25,6 +25,7 @@ Since OPNsense is based on FreeBSD that does not play well with Wi-Fi drivers, w
        ![NAT rules](../assets/NAT-rules-WAN.png)
 
 ### 4.2 Creating OPNsense VM in Proxmox:
+
    - Login to Proxmox and create a new VM with the following configurations:
      
      - 20GB SCSI disk (OPNsense dont require large disk space)
@@ -38,22 +39,40 @@ Since OPNsense is based on FreeBSD that does not play well with Wi-Fi drivers, w
      - Secondly, we add `net01` pointing to `vmbr1` as our WAN
 
   >[!IMPORTANT]
-  >The network device arrangement is important as first network device will always be configured as LAN by OPNsense.
+  >The network device arrangement is **important** as first network device will always be configured as LAN by OPNsense.
+
+### 4.3 OPNsense Installation & Initial Setup
+
+   - Start the created VM
+   - Login with username `installer` and password `opnsense` to perform installation
+   - After the installation have completed, reboot the VM
+ #### 4.3.1 Solving IP conflict with Mercusys IP
+   - By default, OPNsense configure LAN to use `192.168.1.1/24` as the management IP. We have to change it as that IP is taken by our Mercusys router:[^2]
      
-### 3.2 Getting Temporary Internet Access:
-  > [!TIP]
-  > This step is optional and can be replaced with copying the `wpa supplicant` package and its dependencies to a USB drive and mount it in Proxmox to install it.
-   - Since my host machine is connected to my Mercusys router that do not have internet access, i need to use USB Tethering from my phone to get temporary internet access.
-   - After turning on the USB Tethering, plug in the phone to the host machine.
-   - Then run `ip a` to list out all network interfaces:
-   
-      ![usb tethering interface](../assets/usb-tethering-interface.png)
-   
-     Take note of the network interface name of the USB Tethering device. In my case it is `enxaedde6bf213a`
-   - Start the interface and obtain the ip address:
-       ```bash
-          ip link set <interface> up
-          dhclient <interface>
-       ```
+       - Login as root.
+       - Select `2` and press Enter
+       - Choose the LAN interface
+       - `Configure IPv4 address via DHCP?` Type n
+       - `Enter the new LAN IPv4 address:` Type 192.168.1.3
+       - `Enter the new LAN IPv4 subnet mask:` Type 24
+       - `For WAN/Gateway/IPv6:` Just hit Enter to keep defaults
+       - `Do you want to enable the DHCP server on LAN?` Type n for now (We will configure our own DHCP server later)
+    
+   - Try to access OPNsense Web GUI from the management pc at `192.168.1.3`
+
+#### 4.3.2 Configuring WAN for internet access
+   - We need to point our WAN interface to our `vmbr1` in Proxmox:
+     
+      - Login as root in OPNsense console
+      - Select `2` and press Enter
+      - Choose the WAN interface
+      - `Configure IPv4 via DHCP?` Type n
+      - `Enter the new WAN IPv4 address:` 10.254.0.2
+      - `Enter the new WAN IPv4 subnet mask:` 24
+      - `Enter the IPv4 gateway address:` 10.254.0.1 (This will points to Proxmox)
+      - Hit Enter through the remaining prompts
+
+     
 
 [^1]: I use `172.16.0.x` range for `vmbr1` to avoid confusion with my home networks
+[^2]: Refer the [Network Architecture](1-Network-Architechture.md#1-network-architecture)
