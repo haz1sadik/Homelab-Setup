@@ -1,4 +1,4 @@
-## 4. OPNsense Deployment & VLAN Setup
+## 4. OPNsense Deployment
     
 ### 4.1 Linux Bridge Setup for WAN & LAN interfaces
 
@@ -71,8 +71,9 @@ Since OPNsense is based on FreeBSD that does not play well with Wi-Fi drivers, w
       - `Enter the new WAN IPv4 subnet mask:` 24
       - `Enter the IPv4 gateway address:` 10.254.0.1 (This will points to Proxmox)
       - Hit Enter through the remaining prompts
+        
+  - Try to ping `8.8.8.8`
 
-     
 
 [^1]: I use `172.16.0.x` range for `vmbr1` to avoid confusion with my home networks
 [^2]: Refer the [Network Architecture](1-Network-Architechture.md#1-network-architecture)
