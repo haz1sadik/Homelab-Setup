@@ -33,7 +33,7 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 
      3.3 [Enable Wi-Fi Client](sections/3-Proxmox-Installation-WiFi-Setup.md#33-enable-wifi-client-1)
 
-4. [OPNsense Deployment & VLAN Setup](sections/4-OPNSense-Deployment.md)
+4. [OPNsense Deployment](sections/4-OPNSense-Deployment.md)
 
      4.1 [Linux Bridge Setup for WAN & LAN interfaces](sections/4-OPNSense-Deployment.md#41-linux-bridge-setup-for-wan--lan-interfaces)
 
