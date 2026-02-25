@@ -48,11 +48,11 @@ In this project, my main goal is to build and deploy my cybersecurity research l
 5. [VLANs Setup](sections/5-VLANs-Setup.md)
 6. [Initial Firewall Setup](sections/6-Initial-Firewall-Setup.md)
    
-     6.1 [Alias Definition](sections/5-Initial-Firewall-Setup.md#61-alias-definition)
+     6.1 [Alias Definition](sections/6-Initial-Firewall-Setup.md#61-alias-definition)
    
-     6.2 [Offensive Rules in VLAN 10](sections/5-Initial-Firewall-Setup.md#62-offensive-rules-in-vlan-10)
+     6.2 [Offensive Rules in VLAN 10](sections/6-Initial-Firewall-Setup.md#62-offensive-rules-in-vlan-10)
    
-     6.3 [Defensive Rules in VLAN 20](sections/5-Initial-Firewall-Setup.md#63-defensive-rules-in-vlan-20)
+     6.3 [Defensive Rules in VLAN 20](sections/6-Initial-Firewall-Setup.md#63-defensive-rules-in-vlan-20)
 
 ---
 
