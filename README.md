@@ -46,7 +46,14 @@ In this project, my main goal is to build and deploy my cybersecurity research l
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.3.2 [Configuring WAN for internet access](sections/4-OPNSense-Deployment.md#432-configuring-wan-for-internet-access)
 
 5. [VLANs Setup](sections/5-VLANs-Setup.md)
-6. [Initial Firewall Setup](sections/6-Initial-Firewall-Setup.md)
+
+     5.1 [Creating VLANs](sections/5-VLANs-Setup.md#51-creating-vlans)
+   
+     5.2 [Assigning Interface](sections/5-VLANs-Setup.md#52-assigning-interface)
+   
+     5.3 [Kea DHCP Server Configuration](sections/5-VLANs-Setup.md#53-kea-dhcp-server-configuration)
+   
+7. [Initial Firewall Setup](sections/6-Initial-Firewall-Setup.md)
    
      6.1 [Alias Definition](sections/6-Initial-Firewall-Setup.md#61-alias-definition)
    
